@@ -1,0 +1,32 @@
+:root {
+    --primary-color: rgba(0, 92, 121, 0.75);
+    --overlay-color:  rgba(24,39,51, 0.85);
+    --menu-speed: 0.75s
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+.showcase {
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+}
+
+.showcase::before {
+    content: '';
+    background: url()
+}
+

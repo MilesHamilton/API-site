@@ -129,13 +129,13 @@
     transform: rotate(90deg)
 }
 
-/* show menu (~) works like bind*/
+/* show menu (~) works like bind reach into far away nodes*/
 .menu-wrap .toggler:checked ~ .menu {
 visibility: visible;
 }
 
 .menu-wrap .toggler:checked ~ .menu > div{
-    transform: scale(1);
+    transform: scale(3);
     transition-duration: var(--menu-speed);
 }
 

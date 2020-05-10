@@ -13,7 +13,7 @@
     <header class="landing">
         <div class="container landing-inner">
             <h1>City Map</h1>
-            <p>Explore information from cities all over the world!
+            <p>Quick and easily access map information from cities all over the world!
             </p>
         </div>
     </header>
@@ -25,22 +25,21 @@
         </div>
         <div class="menu">
             <div>
-                <div>
-                    <ul>
-                        <li class="washington">Washington<a href="Washington DC"></a></li>
-                        <li><a href="">New York</a></li>
-                        <li><a href="">Tokyo</a></li>
-                        <li><a href="">Mexico City</a></li>
-                        <!-- <li><a href=""></a></li>
-                        <li><a href=""></a></li> -->
-                    </ul>
+                <div class="cities">
+                    <button class="dc active">Washington DC</button>
+                    <div id='mapwash'></div>
+                    <button class="ny active">New York</button>
+                    <div id="mapny"></div>
+                    <button class="mx active">Mexico City</button>
+                    <div id="mapmx"></div>
                 </div>
             </div>
         </div>
     </div>
 
-
     <script src="index.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAsURDi5hsUvQ8QUvGPb6Qmun1JoEeM41o&callback=initMap"
+        async defer></script>
 </body>
 
 </html>

@@ -135,7 +135,7 @@ visibility: visible;
 }
 
 .menu-wrap .toggler:checked ~ .menu > div{
-    transform: scale(3);
+    transform: scale(2);
     transition-duration: var(--menu-speed);
 }
 
@@ -143,7 +143,7 @@ visibility: visible;
 opacity: 1;
 transition: 0.4s ease;
 }
- /* menu button contents */
+ /* menu contents */
 .menu-wrap .menu {
     position: fixed;
     top: 0;
@@ -160,26 +160,34 @@ transition: 0.4s ease;
 .menu-wrap .menu > div {
     background: var(--overlay-color);
     border-radius: 50%;
-    width: 200vw;
-    height: 200vw;
+    width: 30vw;
+    height: 100vw;
     display: flex;
     flex: none;
     align-items: center;
     justify-content: center;
     transform: scale(0);
     transition: all 0.4s ease;
+    display: flex;
+    flex-direction: row;
     
 }
 
-.menu-wrap .menu > div> div {
-    text-align: center;
-    max-width: 90vw;
-    max-width: 100vh;
-    opacity: 0;
-    transition: opacity 0.4s ease; 
+button{
+    width: 400px;
+    background: var(--primary-color);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.9s ease;
 }
 
-.menu-wrap .menu > div > div> ul> li {
+button > div {
+display: none;
+
+}
+
+/* .menu-wrap .menu > div > div> ul> li {
    list-style: none;
    color: #fff; 
    font-size: 1.5rem;
@@ -191,7 +199,15 @@ transition: 0.4s ease;
     text-decoration: none;
     transition: color 0.4s ease;
 }
-
+  */
+#mapwash {
+    
+    height:20vh;
+    width: 20vw;
+    margin: 0;
+    padding: 0;
+    
+  }
 
 
 

@@ -18,13 +18,14 @@
     padding: 0 3rem;
 }
 
-/* landing pages */
+/* landing pages */ 
 .landing {
     background-color: var(--primary-color);
     color: #fff;
     height: 100vh;
     position: relative;
 }
+
 
 .landing:before {
     content: '';
@@ -42,7 +43,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
     height: 100%;
 }
 
@@ -55,23 +55,42 @@
     font-size: 2 rem;
     font-weight: 600;
 }
-
-/* menu button */
-.menu-wrap {
+ /* footer */
+.footer {
+    display: grid;
     position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    height: 100px !important;
+    width: 100%;
+    bottom: 0;
+   box-shadow:  0 0 5px var(--overlay-color);
+
 }
 
+.footer>ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: rgb(206, 206, 206);
+    
+    
+    
+}
+
+.footer>ul li {
+    list-style: none;
+    margin: 10px 0 0 20px;
+    
+}
+/* menu button */
 .menu-wrap .toggler {
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2;
     cursor: pointer;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     opacity: 0;
 }
 
@@ -91,6 +110,8 @@
 
 .menu-wrap .hamburger>div {
     position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 2px;
     background-color: #fff;
@@ -105,8 +126,7 @@
 .menu-wrap .hamburger>div:after {
     content: '';
     position: absolute;
-    z-index: 1;
-    top: -10px;
+    top: 10px;
     width: 100%;
     height: 2px;
     background: inherit;
@@ -114,7 +134,7 @@
 
 /* moves lines down*/
 .menu-wrap .hamburger>div:after {
-    top: 10px;
+    top: -10px;
 }
 
 /* toggle animater "checked"  is a boolean/event) */
@@ -125,7 +145,7 @@
 /* turns hamburger into an X */
 .menu-wrap .toggler:checked+.hamburger>div:before,
 .menu-wrap .toggler:checked+.hamburger>div::after {
-    top: 0;
+    top: 0px;
     transform: rotate(90deg)
 }
 
@@ -170,13 +190,10 @@
     justify-content: center;
     transform: scale(0);
     transition: all 0.4s ease;
-    
+
 
 }
 
-.cities {
-    overflow: auto;
-}
 
 button {
     display: flex;
@@ -195,7 +212,7 @@ button:hover {
     background-color: var(--overlay-color)
 }
 
-
+/* map styling */
 #mapwash {
 
     height: 50vh;
@@ -218,3 +235,9 @@ button:hover {
     margin: 0;
     padding: 0;
 }
+
+.footer {
+    height: 200px;
+    
+
+

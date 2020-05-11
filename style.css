@@ -59,7 +59,7 @@
 /* menu button */
 .menu-wrap {
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     z-index: 1;
 }
@@ -130,87 +130,91 @@
 }
 
 /* show menu (~) works like bind reach into far away nodes*/
-.menu-wrap .toggler:checked ~ .menu {
-visibility: visible;
+.menu-wrap .toggler:checked~.menu {
+    visibility: visible;
 }
 
-.menu-wrap .toggler:checked ~ .menu > div{
-    transform: scale(2);
+.menu-wrap .toggler:checked~.menu>div {
+    transform: scale(1.5);
     transition-duration: var(--menu-speed);
+
 }
 
-.menu-wrap .toggler:checked ~ .menu > div > div{
-opacity: 1;
-transition: 0.4s ease;
+.menu-wrap .toggler:checked~.menu>div>div {
+    opacity: 1;
+    transition: 0.2s ease;
 }
- /* menu contents */
+
+/* menu contents */
 .menu-wrap .menu {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100% ;
+    width: 100%;
     height: 100%;
-    overflow:  hidden;
+    overflow: hidden;
     visibility: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
-.menu-wrap .menu > div {
+.menu-wrap .menu>div {
     background: var(--overlay-color);
-    border-radius: 50%;
-    width: 30vw;
-    height: 100vw;
+    border-radius: 40%;
+    width: 600vh;
+    height: 600vh;
     display: flex;
-    flex: none;
     align-items: center;
     justify-content: center;
     transform: scale(0);
     transition: all 0.4s ease;
-    display: flex;
-    flex-direction: row;
     
+
 }
 
-button{
-    width: 400px;
+.cities {
+    overflow: auto;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    width: 60vw;
     background: var(--primary-color);
     border: none;
     color: #fff;
     cursor: pointer;
-    transition: 0.9s ease;
-}
-
-button > div {
-display: none;
 
 }
 
-/* .menu-wrap .menu > div > div> ul> li {
-   list-style: none;
-   color: #fff; 
-   font-size: 1.5rem;
-   padding: 1rem;
+button:hover {
+    background-color: var(--overlay-color)
 }
 
-.menu-wrap .menu > div > div> ul> li > a {
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.4s ease;
-}
-  */
+
 #mapwash {
-    
-    height:20vh;
-    width: 20vw;
+
+    height: 50vh;
+    width: 60vw;
     margin: 0;
     padding: 0;
-    
-  }
 
+}
 
+#mapny {
+    height: 50vh;
+    width: 60vw;
+    margin: 0;
+    padding: 0;
+}
 
-
-
-
+#mapmx {
+    height: 50vh;
+    width: 60vw;
+    margin: 0;
+    padding: 0;
+}

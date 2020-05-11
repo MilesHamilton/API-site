@@ -1,26 +1,25 @@
 
-//washington
+//Washington
 var map;
+var map2;
+var map3
 function initMap() {
   map = new google.maps.Map(document.querySelector('#mapwash'), {
-    center: {lat: 38.9072, lng: 77.0369},
-    zoom: 11
-  });
+    center: {lat: 38.89511, lng: -77.03637},
+    zoom: 12
+  })
+  map = new google.maps.Map(document.querySelector('#mapny'), {
+    center: {lat: 40.7128, lng: -74.0060},
+    zoom: 12
+  
+})
+map = new google.maps.Map(document.querySelector('#mapmx'), {
+    center: {lat: 19.4326, lng: -99.1332},
+    zoom: 12
+})
 }
 
-// function initMap() {
-//     map = new google.maps.Map(document.querySelector('#mapny'), {
-//       center: {lat: 38.9072, lng: 77.0369},
-//       zoom: 11
-//     });
-//   }
 
-//   function initMap() {
-//     map = new google.maps.Map(document.querySelector('#mapmx'), {
-//       center: {lat: 38.9072, lng: 77.0369},
-//       zoom: 11
-//     });
-//   }
 
 // toggle menu bottons
 let buttons = document.querySelectorAll('button')
@@ -33,6 +32,5 @@ if(sibling.style.display === 'flex') {
 } else {
     sibling.style.display = 'flex'
 }
-})
-});
+})});
 

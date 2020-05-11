@@ -59,7 +59,7 @@
 .footer {
     display: grid;
     position: fixed;
-    height: 100px !important;
+    height: 100px;
     width: 100%;
     bottom: 0;
    box-shadow:  0 0 5px var(--overlay-color);
@@ -72,9 +72,6 @@
     align-items: flex-start;
     justify-content: flex-start;
     color: rgb(206, 206, 206);
-    
-    
-    
 }
 
 .footer>ul li {
@@ -235,9 +232,3 @@ button:hover {
     margin: 0;
     padding: 0;
 }
-
-.footer {
-    height: 200px;
-    
-
-
